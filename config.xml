@@ -1,20 +1,23 @@
 <config>
     <switch_usr>grant</switch_usr>
     <switch_pass>bowieboom123</switch_pass>
-    <switch_ip>127.0.0.1</switch_ip>
+    <user_prompt>rocky-x1 login: </user_prompt>
+    <pass_prompt>Password: </pass_prompt>
+    <switch_ip>127.0.1.1</switch_ip>
+    <telnet_timeout>2</telnet_timeout>
 
-    <routes> 
+    <routes>
         <starlink>
             <step>
                 <command>ip a</command>
-                <validation>forever</validation>
+                <validation></validation>
             </step>
         </starlink>
 
         <att>
             <step>
                 <command>test</command>
-                <validation>test1</validation>
+                <validation></validation>
             </step>
         </att>
     </routes>

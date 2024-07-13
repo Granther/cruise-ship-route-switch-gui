@@ -13,6 +13,11 @@ class TelConnectionException(LogException):
     def __init__(self, message):
         super().__init__(message)
 
+class MessageException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message
+
 class Log:
     def __init__(self, className: str, hotLog = None):
         try:
