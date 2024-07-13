@@ -1,0 +1,21 @@
+<config>
+    <switch_usr>grant</switch_usr>
+    <switch_pass>bowieboom123</switch_pass>
+    <switch_ip>127.0.0.1</switch_ip>
+
+    <routes> 
+        <starlink>
+            <step>
+                <command>ip a</command>
+                <validation>forever</validation>
+            </step>
+        </starlink>
+
+        <att>
+            <step>
+                <command>test</command>
+                <validation>test1</validation>
+            </step>
+        </att>
+    </routes>
+</config>
